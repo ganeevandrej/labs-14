@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int x = 1, y = 1, a = 0, k = 2;
+    while (a < n) {
+        ++k;
+        a = y + x;
+        y = x;
+        x = a;
+    }
+    cout << k;
+    return 0;
+}
